@@ -17,13 +17,26 @@
 <p>
   <?php
     $lorem = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas soluta quas, necessitatibus animi dolorem minus ea ab quaerat aliquam dolorum veniam impedit rem alias veritatis nemo vel? Velit, inventore!";
-    echo $lorem;
+    echo $lorem ;
   ?>
 </p>
 
 <div>
   <?php
-    echo "La lunghezza del verso è " . strlen($lorem) . " caratteri";
+    echo "La lunghezza è " . strlen($lorem) . " caratteri";
+  ?>
+</div>
+
+<p>
+  <?php
+    $censor = $_GET['word'];
+    echo $newString =  str_replace($censor, "***", $lorem);
+  ?>
+</p>
+
+<div>
+  <?php
+    echo "La lunghezza è " . strlen($newString) . " caratteri";
   ?>
 </div>
 </body>
