@@ -40,4 +40,36 @@
   ?>
 </div>
 </body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+  }
+
+  h1, p, div{
+    margin-bottom: 30px;
+  }
+
+  h1{
+    color: red;
+  }
+
+  div{
+    color: green;
+  }
+
+</style>
 </html>
